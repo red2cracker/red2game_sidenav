@@ -90,6 +90,11 @@ body {
 
 /* https://zetawiki.com/wiki/CSS_%EB%84%A4%EC%9D%B4%EB%B2%84_%EA%B2%80%EC%83%89%EC%B0%BD_UI_%EA%B5%AC%ED%98%84 */
 
+#cse-search-box {
+  display: block;
+  padding-left: 12px;
+}
+
 #cse-keyword {
   border: 0px;
   padding: 5px 10px;
@@ -123,6 +128,24 @@ body {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
   <a href="#">Red2.net</a>
+
+<!-- Google 검색 -->
+<form action="http://www.google.co.kr" id="cse-search-box" class="" role="search">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4096343605930509:6706445990">
+    <input type="hidden" name="ie" value="UTF-8">
+	
+    <input type="text" name="q" id="cse-keyword" title="검색어 입력">
+    <input type="submit" name="sa" id="cse-search-button" value="&#xac80;&#xc0c9;">
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.co.kr/coop/cse/brand?form=cse-search-box&amp;lang=ko"></script>
+  
+  
+  
+  
+  
   
   <a href="#" class="gameTitle">게임</a>
 
@@ -160,6 +183,7 @@ body {
   
   
 <!-- Google 검색 -->
+<!-- 
 <form action="http://www.google.co.kr" id="cse-search-box" class="" role="search">
   <div>
     <input type="hidden" name="cx" value="partner-pub-4096343605930509:6706445990">
@@ -171,7 +195,7 @@ body {
 </form>
 
 <script type="text/javascript" src="http://www.google.co.kr/coop/cse/brand?form=cse-search-box&amp;lang=ko"></script>
-
+ -->
 
 
 
