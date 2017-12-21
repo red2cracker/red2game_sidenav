@@ -44,7 +44,7 @@ body {
     right: 15px; /* 25px; */
     font-size: 36px;
     margin-left: 50px;
-	padding: 0px;
+	padding: 0px; /* 링크 속성 재정의. 여백 제거. */
 }
 
 #main {
@@ -74,6 +74,40 @@ body {
   padding: 8px 8px 8px 32px;
   color: #fff;
 }
+
+.openbtn {
+  font-size:30px;
+  cursor:pointer;
+}
+
+.openbtn:hover {
+  color: #f00;
+}
+
+
+
+/* 구글 검색 */
+
+#cse-keyword {
+  border: 0px;
+  padding: 5px 10px;
+  font-size: 24px; /* 입력창 크기 조절 */
+  width: 150px;
+}
+
+#cse-search-button {
+  border: 0px;
+  padding: 5px 10px;
+  background-color: #2567FC;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#cse-search-button:hover {
+  color: #f00;
+}
+
 
 
 
@@ -116,12 +150,23 @@ body {
 </div>
 
 <div id="main">
-  <div><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></div>
+  <div><span class="openbtn" style="" onclick="openNav()">&#9776; open</span></div>
   <h2>Sidenav Push Example 예제</h2>
   <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
   
   
+<!-- Google 검색 -->
+<form action="http://www.google.co.kr" id="cse-search-box" class="" role="search">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4096343605930509:6706445990">
+    <input type="hidden" name="ie" value="UTF-8">
+	
+    <input type="text" name="q" id="cse-keyword" title="검색어 입력">
+    <input type="submit" name="sa" id="cse-search-button" value="&#xac80;&#xc0c9;">
+  </div>
+</form>
 
+<script type="text/javascript" src="http://www.google.co.kr/coop/cse/brand?form=cse-search-box&amp;lang=ko"></script>
 
 
 
