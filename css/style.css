@@ -14,7 +14,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #e6e6e6; /* #111 */
     overflow-x: hidden;
     transition: 0.5s;
     /*padding-top: 60px;*/
@@ -24,13 +24,13 @@ body {
     padding: 8px 8px 8px 12px; /* 32px */
     text-decoration: none;
     /*font-size: 25px;*/
-    color: #818181;
+    color: #000; /* #818181; */
     display: block;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #f00; /* #f1f1f1; */
 }
 
 .sidenav .closebtn {
@@ -59,6 +59,9 @@ body {
   padding: 0px;
   list-style: none;
 }
+.gameList li, .gameMenu li {
+  border-bottom: 1px solid #fff;
+}
 
 .gameMenu {
   margin: 0px;
@@ -66,16 +69,27 @@ body {
   list-style: none;
 }
 
+
 #mySidenav h1 {
   margin: 0px;
   padding: 0px;
-  color: #fff;
+  color: #000;
+  letter-spacing: -2px;
+  /*text-indent: -9999px;*/
 }
+/*
+#mySidenav h1 a {
+  padding-left: 65px;
+  background-image: url("../img/red2mamm.png");
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+*/
 
 #mySidenav h2 {
   margin: 0px;
   padding: 8px 8px 8px 12px;
-  color: #fff;
+  color: #000;
 }
 
 
