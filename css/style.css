@@ -47,15 +47,11 @@ body {
     padding: 16px; /* 16px */
 }
 
-@media screen and (max-height: 450px) {
-  /*.sidenav {padding-top: 15px;}*/
-  .sidenav a {font-size: 18px;}
+
+
+.gameTitle {
+  cursor: pointer;
 }
-/*
-@media screen and (min-width: 451px) {
-  #mySidenav {width: 250px;}
-  #main {margin-left: 250px;}
-}*/
 
 .gameList {
   display: none;
@@ -64,15 +60,24 @@ body {
   list-style: none;
 }
 
+.gameMenu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#mySidenav h1 {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+
 #mySidenav h2 {
   margin: 0px;
   padding: 8px 8px 8px 12px;
   color: #fff;
 }
 
-.gameTitle {
-  cursor: pointer;
-}
 
 .openbtn {
   font-size:30px;
@@ -120,3 +125,15 @@ body {
 #cse-search-button:hover {
   color: #f00;
 }
+
+
+@media screen and (max-height: 450px) {
+  /*.sidenav {padding-top: 15px;}*/
+  .sidenav a {font-size: 18px;}
+}
+/*
+@media screen and (min-width: 451px) {
+  #mySidenav {width: 250px;}
+  #main {margin-left: 250px;}
+}*/
+
