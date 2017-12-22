@@ -112,9 +112,9 @@ body {
   cursor: pointer;
   font-size: 17px;
   vertical-align: top; /* 중요 */
-  /*height: 34px;*/ /* 중요 */
-  /*font-size: 18px;*/
+  /*font-size: 24px;*/
   padding: 5px 6px;
+  height: 34px;
 }
 
 #cse-search-button:hover {
