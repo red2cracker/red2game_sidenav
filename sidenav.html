@@ -4,123 +4,8 @@
 <title>Red2.net 게임 공략 테스트</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/style.css" rel="stylesheet">
 <style>
-body {
-    font-family: "Lato", sans-serif;
-	overflow: hidden;
-	margin: 0px;
-	padding: 0px;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    /*padding-top: 60px;*/
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 12px; /* 32px */
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0px;
-    right: 15px; /* 25px; */
-    font-size: 36px;
-    margin-left: 50px;
-	padding: 0px; /* 링크 속성 재정의. 여백 제거. */
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px; /* 16px */
-}
-
-@media screen and (max-height: 450px) {
-  /*.sidenav {padding-top: 15px;}*/
-  .sidenav a {font-size: 18px;}
-}
-/*
-@media screen and (min-width: 451px) {
-  #mySidenav {width: 250px;}
-  #main {margin-left: 250px;}
-}*/
-
-.gameList {
-  display: none;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-#mySidenav h2 {
-  margin: 0px;
-  padding: 8px 8px 8px 12px;
-  color: #fff;
-}
-
-.openbtn {
-  font-size:30px;
-  cursor:pointer;
-}
-
-.openbtn:hover {
-  color: #f00;
-}
-
-
-
-/* 구글 검색 */
-
-/* https://zetawiki.com/wiki/CSS_%EB%84%A4%EC%9D%B4%EB%B2%84_%EA%B2%80%EC%83%89%EC%B0%BD_UI_%EA%B5%AC%ED%98%84 */
-
-#cse-search-box {
-  display: block;
-  /*margin: 0 auto;*/
-  padding-left: 12px;
-  /*text-align: center;*/ /* input 요소는 인라인이므로 텍스트 정렬 중앙 사용 */
-}
-
-#cse-keyword {
-  border: 0px;
-  padding: 5px 10px;
-  font-size: 24px; /* 입력창 크기 조절 */
-  width: 150px;
-}
-
-#cse-search-button {
-  border: 0px;
-  /*padding: 5px 10px;*/
-  background-color: #2567FC;
-  color: #fff;
-  cursor: pointer;
-  font-size: 17px;
-  vertical-align: top; /* 중요 */
-  height: 34px; /* 중요 */
-}
-
-#cse-search-button:hover {
-  color: #f00;
-}
-
-
-
 
 </style>
 </head>
@@ -144,12 +29,7 @@ body {
 
 <script type="text/javascript" src="http://www.google.co.kr/coop/cse/brand?form=cse-search-box&amp;lang=ko"></script>
   
-  
-  
-  
-  
-  
-  <a href="#" class="gameTitle">게임</a>
+  <h2 class="gameTitle">게임</h2>
 
 <ul class="gameList">
   <li><a href="#">목록01</a></li>
@@ -182,77 +62,11 @@ body {
   <div><span class="openbtn" style="" onclick="openNav()">&#9776; open</span></div>
   <h2>Sidenav Push Example 예제</h2>
   <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-  
-  
-<!-- Google 검색 -->
-<!-- 
-<form action="http://www.google.co.kr" id="cse-search-box" class="" role="search">
-  <div>
-    <input type="hidden" name="cx" value="partner-pub-4096343605930509:6706445990">
-    <input type="hidden" name="ie" value="UTF-8">
-	
-    <input type="text" name="q" id="cse-keyword" title="검색어 입력">
-    <input type="submit" name="sa" id="cse-search-button" value="&#xac80;&#xc0c9;">
-  </div>
-</form>
-
-<script type="text/javascript" src="http://www.google.co.kr/coop/cse/brand?form=cse-search-box&amp;lang=ko"></script>
- -->
-
-
-
-
-
-
 
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-
-
-
-function sideNavChange() {
-var mql = window.matchMedia("screen and (min-width: 768px)");
-
-if (mql.matches) {
-    //$('h2').css('color', 'orange');
-    $('#mySidenav').css('width', '250px');
-    $('#main').css('margin-left', '250px');
-} else {
-    //$('h2').css('color', 'black');
-    $('#mySidenav').css('width', '0px');
-    $('#main').css('margin-left', '0px');
-}
-}
-
-
-
-$(document).ready(function () {
-  sideNavChange();
-});
-
-$(window).resize(function () {
-  sideNavChange();
-});
-
-
-$(".gameTitle").click(function(){
-  $(".gameList").toggle(250);
-});
-
-
-</script>
+<script src="js/nav.js"></script>
      
 </body>
 </html> 

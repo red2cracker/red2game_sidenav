@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+body {
+    font-family: "Lato", sans-serif;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 12px; /* 32px */
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px; /* 25px; */
+    font-size: 36px;
+    margin-left: 50px;
+	padding: 0px; /* 링크 속성 재정의. 여백 제거. */
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px; /* 16px */
+}
+
+@media screen and (max-height: 450px) {
+  /*.sidenav {padding-top: 15px;}*/
+  .sidenav a {font-size: 18px;}
+}
+/*
+@media screen and (min-width: 451px) {
+  #mySidenav {width: 250px;}
+  #main {margin-left: 250px;}
+}*/
+
+.gameList {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#mySidenav h2 {
+  margin: 0px;
+  padding: 8px 8px 8px 12px;
+  color: #fff;
+}
+
+.gameTitle {
+  cursor: pointer;
+}
+
+.openbtn {
+  font-size:30px;
+  cursor:pointer;
+}
+
+.openbtn:hover {
+  color: #f00;
+}
+
+
+
+/* 구글 검색 */
+
+/* https://zetawiki.com/wiki/CSS_%EB%84%A4%EC%9D%B4%EB%B2%84_%EA%B2%80%EC%83%89%EC%B0%BD_UI_%EA%B5%AC%ED%98%84 */
+
+#cse-search-box {
+  display: block;
+  /*margin: 0 auto;*/
+  padding-left: 12px;
+  /*text-align: center;*/ /* input 요소는 인라인이므로 텍스트 정렬 중앙 사용 */
+  /*margin-top: 15px;*/
+}
+
+#cse-keyword {
+  border: 0px;
+  padding: 5px 10px;
+  font-size: 24px; /* 입력창 크기 조절 */
+  width: 150px;
+}
+
+#cse-search-button {
+  border: 0px;
+  /*padding: 5px 10px;*/
+  background-color: #2567FC;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  vertical-align: top; /* 중요 */
+  /*height: 34px;*/ /* 중요 */
+  /*font-size: 18px;*/
+  padding: 5px 6px;
+}
+
+#cse-search-button:hover {
+  color: #f00;
+}
