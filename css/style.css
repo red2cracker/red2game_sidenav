@@ -86,6 +86,15 @@ body {
 }
 */
 
+#mySidenav h1 a {
+  
+}
+#mySidenav h1 a:hover {
+  
+}
+
+
+
 #mySidenav h2 {
   margin: 0px;
   padding: 8px 8px 8px 12px;
