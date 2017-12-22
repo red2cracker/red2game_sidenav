@@ -87,10 +87,13 @@ body {
 */
 
 #mySidenav h1 a {
-  
+  /*color: #f00;*/
 }
 #mySidenav h1 a:hover {
   
+}
+#mySidenav h1 span {
+  /*color: #000;*/
 }
 
 
