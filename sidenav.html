@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <style>
 
 </style>
@@ -16,7 +17,9 @@
 <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    <i class="fa fa-times" aria-hidden="true"></i> 닫기
+  </a>
   
   <h1><a href="#">Red2.net</a></h1>
 
@@ -35,7 +38,7 @@
 
 
 
-<h2 class="gameTitle">게임+</h2>
+<h2 class="gameTitle">게임 +</h2>
 
 <ul class="gameList">
   <li><a href="#">목록01</a></li>
@@ -68,9 +71,11 @@
 <!-- 사이드 네비게이션 끝 -->
 
 <div id="main">
-  <div><span class="openbtn" style="" onclick="openNav()">&#9776; 메뉴</span></div>
-  <h1>게임명</h1>
-  <p>쏼라쏼라 -_-a</p>
+  <div><span class="openbtn" onclick="openNav()">
+    <i class="fa fa-bars" aria-hidden="true"></i> 메뉴</span>
+  </div>
+  <h1>Collapsible Sidebar Using Bootstrap 3</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

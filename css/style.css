@@ -33,13 +33,15 @@ body {
     color: #f00; /* #f1f1f1; */
 }
 
+/* X(닫기) */
 .sidenav .closebtn {
     position: absolute;
     top: 0px;
-    right: 15px; /* 25px; */
-    font-size: 36px;
-    margin-left: 50px;
-	padding: 0px; /* 링크 속성 재정의. 여백 제거. */
+    right: 0px; /* 25px; */
+    /*font-size: 36px;*/
+    margin: 0px;
+	padding: 8px; /* 링크 속성 재정의. 여백 제거. */
+	/*border: 1px solid #000;*/
 }
 
 #main {
@@ -104,16 +106,19 @@ body {
   color: #000;
 }
 
-
+/* O(열기) */
 .openbtn {
-  font-size:30px;
-  cursor:pointer;
+  /*font-size: 25px;*/
+  cursor: pointer;
+  background-color: #34495e;
+  color: #fff;
+  padding: 8px 12px;
 }
-
+/*
 .openbtn:hover {
   color: #f00;
 }
-
+*/
 
 
 /* 구글 검색 */
